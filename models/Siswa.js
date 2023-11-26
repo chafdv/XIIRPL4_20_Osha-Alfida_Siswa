@@ -4,7 +4,6 @@ const SiswaSchema = new mongoose.Schema({
     nama: {
         type: String,
         required: [true, 'Silahkan isikan nama'],
-        unique: true
     },
     nis: {
         type: String,
@@ -14,28 +13,17 @@ const SiswaSchema = new mongoose.Schema({
     kelas: {
         type: String,
         required: [true, 'Silahkan isikan kelas'],
-        unique: true
     },
-    jurusan: {
+    gender: {
         type: String,
-        required: [true, 'Silahkan isikan jurusan'],
-        unique: true
+        required:  [true, 'Silahkan isikan gender'],
     },
     alamat: {
         type: String,
         required: [true, 'Silahkan isikan alamat'],
         unique: true
     }
-    // alamat: {
-    //     type: String,
-    //     required: [true, 'Silahkan isikan alamat'],
-    //     unique: true
-    // },
-    // gender: {
-    //     type: String,
-    //     required: [true, 'Silahkan isikan gender'],
-    //     unique: true
-    // },
+   
     // email: {
     //     type: String,
     //     required: true,

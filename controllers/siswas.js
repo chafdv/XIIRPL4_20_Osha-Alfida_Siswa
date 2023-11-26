@@ -55,7 +55,8 @@ module.exports ={
                 message: "data berhasil ditambahkan"
             })
         } catch (error){
-            res.status(400).json({sucess: false})
+            res.status(400).json({sucess: false, message: error.message })
+            
 
         }
         // siswas.push(req.body)

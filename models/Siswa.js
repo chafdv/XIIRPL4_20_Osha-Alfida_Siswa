@@ -18,9 +18,9 @@ const SiswaSchema = new mongoose.Schema({
         type: String,
         required:  [true, 'Silahkan isikan gender'],
     },
-    alamat: {
+    noHp: {
         type: String,
-        required: [true, 'Silahkan isikan alamat'],
+        required: [true, 'Silahkan isikan no hp'],
         unique: true
     }
    
